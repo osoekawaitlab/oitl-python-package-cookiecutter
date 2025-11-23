@@ -1,3 +1,1 @@
-# {{ cookiecutter.project_name }}
-
-{{ cookiecutter.project_description }}
+--8<-- "README.md"
