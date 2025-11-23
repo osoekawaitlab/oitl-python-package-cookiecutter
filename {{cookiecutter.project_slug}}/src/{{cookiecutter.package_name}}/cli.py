@@ -2,7 +2,7 @@
 
 from argparse import ArgumentParser
 
-from {{ cookiecutter.package_name }}.core import __version__
+from {{ cookiecutter.package_name }}._version import __version__
 
 
 def generate_cli_parser() -> ArgumentParser:
