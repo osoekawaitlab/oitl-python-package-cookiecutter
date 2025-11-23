@@ -1,0 +1,18 @@
+{
+  "project_name": "myproject",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}-py",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_description": "A Python package",
+  "author_name": "Your Name",
+  "author_email": "your.email@example.com",
+  "github_username": "your-github-username",
+  "github_organization": "{{ cookiecutter.github_username }}",
+  "python_version": "3.12",
+  "min_python_version": "3.10",
+  "license": ["MIT", "Apache-2.0", "GPL-3.0", "BSD-3-Clause"],
+  "use_cli": ["yes", "no"],
+  "github_integration": ["yes", "no"],
+  "_copy_without_render": [
+    "*.py.typed"
+  ]
+}
