@@ -88,19 +88,21 @@ line-ending = "auto"
 [tool.mypy]
 python_version = "{{ cookiecutter.python_version }}"
 strict = true
-warn_return_any = true
-warn_unused_configs = true
-disallow_untyped_defs = true
-disallow_incomplete_defs = true
 check_untyped_defs = true
+disallow_any_explicit = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
 disallow_untyped_decorators = true
+disallow_untyped_defs = true
 no_implicit_optional = true
-warn_redundant_casts = true
-warn_unused_ignores = true
-warn_no_return = true
-warn_unreachable = true
-strict_equality = true
 show_error_codes = true
+strict_equality = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests", "src"]
