@@ -90,7 +90,6 @@ You will be prompted for the following values:
 - `package_name`: Python package name (auto-generated from project_name)
 - `project_description`: Short description of your project
 - `author_name`: Your name
-- `author_email`: Your email address
 - `github_username`: Your GitHub username
 - `github_organization`: GitHub organization (defaults to github_username)
 - `python_version`: Default Python version for development (default: 3.12)

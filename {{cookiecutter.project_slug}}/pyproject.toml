@@ -5,7 +5,7 @@ description = "{{ cookiecutter.project_description }}"
 readme = "README.md"
 license = "{{ cookiecutter.license }}"
 authors = [
-    { name = "{{ cookiecutter.author_name }}"{% if cookiecutter.author_email %}, email = "{{ cookiecutter.author_email }}"{% endif %} }
+    { name = "{{ cookiecutter.author_name }}" }
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
