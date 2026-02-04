@@ -38,6 +38,7 @@ version = {attr = "{{ cookiecutter.package_name }}._version.__version__"}
 
 [dependency-groups]
 dev = [
+    "getgauge>=0.5.0",
     "mypy>=1.18.2",
     "nox>=2025.11.12",
     "pytest>=9.0.1",
@@ -72,8 +73,8 @@ ignore = [
 "tests/**/*.py" = [
     "S101",    # assert-used (pytest uses asserts)
 ]
-"tests/e2e/**/*.py" = [
-    "S607",  # start-process-with-partial-path
+"e2e/**/*.py" = [
+    "S101",    # assert-used (test uses asserts)
 ]
 
 [tool.ruff.lint.pydocstyle]
@@ -103,6 +104,7 @@ warn_return_any = true
 warn_unreachable = true
 warn_unused_configs = true
 warn_unused_ignores = true
+mypy_path = ["stubs"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests", "src"]
@@ -114,6 +116,4 @@ addopts = [
     "--doctest-modules",
 ]
 markers = [
-    "unit: Unit tests (pure logic, no external dependencies)",
-    "e2e: End-to-end tests with mocked SDKs",
 ]

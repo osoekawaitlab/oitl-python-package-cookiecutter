@@ -16,5 +16,9 @@
         }
     },
     "ruff.organizeImports": true,
-    "ruff.fixAll": true
+    "ruff.fixAll": true,
+    "files.associations": {
+        "*.spec": "gauge",
+        "*.cpt": "gauge"
+    }
 }

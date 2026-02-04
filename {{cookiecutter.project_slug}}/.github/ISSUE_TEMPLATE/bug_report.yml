@@ -56,7 +56,7 @@ body:
       label: Environment
       description: Version, OS, Python version, etc.
       placeholder: |
-        - shtym-py version:
+        - {{cookiecutter.package_name}} version:
         - Python version:
         - OS:
     validations:
