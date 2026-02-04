@@ -22,7 +22,6 @@ def tests_e2e(session: nox.Session) -> None:
     session.run("gauge", "run", "e2e/specs")
 
 
-
 @nox.session(python="{{ cookiecutter.python_version }}")
 def tests(session: nox.Session) -> None:
     """Run all tests with coverage reporting."""
