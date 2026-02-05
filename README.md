@@ -7,7 +7,7 @@ Cookiecutter template for Osoekawa IT Laboratory's Python packages.
 This cookiecutter template provides a fully configured Python package structure with:
 
 - Modern Python packaging with `pyproject.toml`
-- Testing setup with pytest (unit and E2E tests)
+- Testing setup with pytest (unit tests) and Gauge (E2E tests)
 - Code quality tools (mypy, ruff)
 - Task automation with nox
 - Documentation with MkDocs Material
@@ -24,6 +24,7 @@ This cookiecutter template provides a fully configured Python package structure 
 - Python 3.10 or higher
 - [cookiecutter](https://github.com/cookiecutter/cookiecutter)
 - [uv](https://github.com/astral-sh/uv) (recommended)
+- [Gauge](https://gauge.org/) (for E2E tests)
 - [GitHub CLI (gh)](https://cli.github.com/) (optional, required only if `github_integration=yes`)
 
 ## Usage
@@ -116,9 +117,14 @@ git commit -m "Initial project setup"
 git remote add origin <your-repo-url>
 git push -u origin main
 
-# Install dependencies and run tests
+# Install dependencies
 uv sync --group dev
+
+# Run unit tests with coverage
 uv run nox -s tests
+
+# Run E2E tests (requires Gauge)
+uv run nox -s tests_e2e
 ```
 
 ## Project Structure
@@ -128,13 +134,16 @@ uv run nox -s tests
 ├── .github/
 │   ├── workflows/          # CI/CD workflows
 │   └── ISSUE_TEMPLATE/     # Issue templates
+├── .vscode/                # VSCode settings
 ├── docs/
 │   ├── adr/                # Architecture Decision Records
 │   └── architecture/       # Architecture documentation
+├── e2e/                    # End-to-end tests (Gauge)
 ├── src/{package_name}/     # Main package source code
+├── stubs/                  # Type stubs for external packages
 ├── tests/
-│   ├── unit/               # Unit tests
-│   └── e2e/                # End-to-end tests
+│   └── unit/               # Unit tests (pytest)
+├── .python-version         # Python version specification
 ├── pyproject.toml          # Project configuration
 ├── noxfile.py              # Task automation
 └── mkdocs.yml              # Documentation configuration

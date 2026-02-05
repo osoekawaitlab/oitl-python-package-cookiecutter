@@ -124,7 +124,7 @@ This PR sets up the initial project structure using the cookiecutter template fo
 ## Changes
 
 - Added package structure with `src/` layout
-- Set up testing framework (unit and E2E tests with pytest)
+- Set up testing framework (unit tests with pytest, E2E tests with Gauge)
 - Configured code quality tools (mypy, ruff)
 - Initialized documentation structure (MkDocs with Material theme)
 - Added GitHub Actions workflows (tests, docs deployment, PyPI release)
