@@ -1,5 +1,9 @@
 nav:
   - Home: index.md
+  - API Reference:
+    - Overview: reference/index.md
+  - Specifications:
+    - E2E Specs: specifications/index.md
   - Architecture:
     - Overview: architecture/overview.md
     - Records: adr/
