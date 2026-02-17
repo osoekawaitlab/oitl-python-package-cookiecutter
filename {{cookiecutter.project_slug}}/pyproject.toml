@@ -75,6 +75,7 @@ ignore = [
 ]
 "e2e/**/*.py" = [
     "S101",    # assert-used (test uses asserts)
+    "RUF005",  # collection-literal-concatenation (Gauge's parser fails on (*iterable, item) syntax)
 ]
 
 [tool.ruff.lint.pydocstyle]
