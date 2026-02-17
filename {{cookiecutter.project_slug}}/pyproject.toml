@@ -73,7 +73,7 @@ ignore = [
 "tests/**/*.py" = [
     "S101",    # assert-used (pytest uses asserts)
 ]
-"e2e/**/*.py" = [
+"e2e/step_impl/*.py" = [
     "S101",    # assert-used (test uses asserts)
     "RUF005",  # collection-literal-concatenation (Gauge's parser fails on (*iterable, item) syntax)
 ]
