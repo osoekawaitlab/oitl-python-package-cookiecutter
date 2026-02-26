@@ -4,6 +4,7 @@
 
 [Proposed | Accepted | Deprecated | Superseded]
 <!-- If superseded, include a reference to the new ADR -->
+<!-- If amended, use: Accepted (Amended YYYY-MM-DD) -->
 
 ## Date
 
@@ -57,3 +58,28 @@ List any relevant documents, articles, books, or other resources that supported 
 - Research materials
 - Benchmarks or performance data
 - Team discussions or meeting notes
+
+## Amendment (YYYY-MM-DD)
+
+<!-- Add this section when amending an accepted ADR. Keep the original sections unchanged and describe the evolution here. Remove this section from ADRs that have not been amended. -->
+
+### What Changed
+
+Describe what changed from the original decision. State the before and after clearly.
+
+- **Original**: What the ADR originally stated
+- **Amended to**: What it now states
+
+### Reason for Amendment
+
+Explain why the original decision needed to be updated. What new information, requirement, or constraint prompted this change?
+
+### Impact on Original ADR
+
+**Unchanged:**
+
+List the aspects of the original decision that remain valid.
+
+**Changed:**
+
+List the specific aspects that have been modified.
