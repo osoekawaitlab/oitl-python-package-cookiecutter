@@ -43,7 +43,7 @@ def tests_all_versions(session: nox.Session) -> None:
 
 
 @nox.session(python="{{ cookiecutter.python_version }}")
-def mypy(session: nox.Session) -> None:
+def typecheck(session: nox.Session) -> None:
     """Run mypy type checking."""
     session.install("-e", ".", "--group=dev")
     session.run("mypy", "src/", "tests/")
